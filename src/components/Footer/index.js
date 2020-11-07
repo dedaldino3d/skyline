@@ -1,59 +1,90 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import { FaPhoneAlt, FaClock, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaClock,
+  FaMapMarkerAlt,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 
-import { Container, Location, Item, ListContainer, Services } from "./styles";
+import {
+  Container,
+  Location,
+  Item,
+  ListContainer,
+  Services,
+  Social,
+  SocialItem,
+} from "./styles";
 
 export const Footer = (props) => {
   let date = new Date().getFullYear();
 
   return (
     <Container>
-      {/* <Img
-        src={require("../../images/w-b-logo3.jpg")}
-        alt="Skyline Footer Logo"
-      /> */}
       <ListContainer>
         <Services>
-          <li>COMPANY SECRETARIAL SERVICES</li>
-          <li>STATUTORY REPORTING SERVICES</li>
-          <li>REPORTING SERVICES</li>
+          <h4>Serviços</h4>
+          <li>Company secretatarial services</li>
+          <li>Statutory reporting services</li>
+          <li>Outsourcing your finance</li>
+          <li>Financial management</li>
+          <li>Trusted business advisor</li>
         </Services>
         <Services>
-          <li>OUTSOURCING YOUR FINANCE</li>
-          <li>FINANCIAL MANAGEMENT</li>
-          <li>TRUSTED BUSINESS ADVISOR</li>
+          <h4>Saber mais</h4>
+          <li>Perguntas frequentes</li>
+          <li>Programa de Parceria</li>
         </Services>
+        <Services>
+          <h4>Skyline</h4>
+          <li>Sobre nós</li>
+          <li>Conheça o time</li>
+          <li>Contacte-nos</li>
+          <li>Carreiras</li>
+        </Services>
+        <Social>
+          <SocialItem>
+            <FaFacebook />
+          </SocialItem>
+          <SocialItem>
+            <FaInstagram />
+          </SocialItem>
+          <SocialItem>
+            <FaTwitter />
+          </SocialItem>
+        </Social>
       </ListContainer>
       <ListContainer>
         <Location>
           <Item>
             <FaMapMarkerAlt />
-            Location
+            Localização
           </Item>
           <Item>Luanda, Angola</Item>
-          <Item>Camama, New World</Item>
+          <Item>Camama, Mundo Novo</Item>
         </Location>
         <Location>
           <Item>
             <FaPhoneAlt />
-            Contact
+            Contacto
           </Item>
-          <Item>Phone 1: +244 946334643</Item>
-          <Item>Phone 2: +244 946334642</Item>
+          <Item>Telefone 1: +244 946334643</Item>
+          <Item>Telefone 2: +244 946334642</Item>
           <Item>Email: dedaldino@admin.skyline.com</Item>
         </Location>
         <Location>
           <Item>
             <FaClock />
-            Working Time
+            Hora de Trabalho
           </Item>
-          <Item>From Monday at Friday</Item>
-          <Item>From 8h a.m at 4h p.m</Item>
+          <Item>Segunda à Sexta</Item>
+          <Item>8h a.m às 4h p.m</Item>
         </Location>
       </ListContainer>
       <span className="copyright">
-        Copyright © {date} All rights reserved. Builded by dedaldino3D
+        Copyright © {date} Todos direitos reservados. Builded by dedaldino3D
       </span>
     </Container>
   );
