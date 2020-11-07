@@ -2,73 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div``;
 
-export const Header = styled.header`
-  display: flex;
-  overflow: hidden;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  z-index: 1000;
-  position: fixed;
-  background: var(--white);
-  width: 100%;
-  padding: 0px 20px;
-  top: 0;
-  box-shadow: var(--bs-ud);
-
-  & > a:first-of-type {
-    font-size: 1.5em;
-    color: var(--blue-bolder);
-    font-weight: 600;
-    max-width: 4em;
-    & img {
-      width: 40px;
-      height: 100%;
-    }
-  }
-`;
-
-export const SubHeader = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-contnet: center;
-  max-width: 400px;
-  flex: 1 1 auto;
-  height: 100%;
-  & > a {
-    padding: 10px;
-    height: 100%;
-    :hover {
-      background: var(--blue-bolder);
-      transition: all 500ms ease-in-out;
-      color: var(--white);
-      cursor: pointer;
-    }
-  }
-`;
-
-export const MainHeader = styled.div`
-  background-color: var(--blue-bold);
-  padding: 0 5em;
-  margin-top: 50px;
-
-  @media screen and (max-width: 640px) {
-    padding: 0;
-  }
-`;
-
-export const Info = styled.div`
-  padding: 0.8em 3em;
-  margin: 0.5em 0 0.8em;
-  max-width: 100%;
-  display: block;
-  @media screen and (max-width: 640px) {
-    padding: 0.8em;
-    margin-bottom: 1em;
-  }
-`;
-
 export const TextInfo = styled.p`
   word-wrap: break-word;
   font-size: 1.3em;
@@ -77,18 +10,21 @@ export const TextInfo = styled.p`
   flex: 1 1 auto;
 `;
 
-export const Title = styled.h1`
-  font-size: 2em;
+export const Title = styled.div`
+  font-size: 1.4em;
   font-weight: 600;
-  line-spacing: 1.5;
   width: 100%:
   text-align: center;
   margin: 10px auto;
   padding: 1em;
-  border-bottom: 1px solid var(--border);
+  line-height: 1.2;
   & > span {
     color: var(--blue);
     text-transform: underline;
+  }
+  & p {
+    font-size: 0.9435em;
+    font-weight: 400;
   }
 `;
 
@@ -123,15 +59,4 @@ export const Img = styled.img`
   max-height: 20em;
   border-radius: 4px;
   flex: 1 1 auto;
-`;
-
-export const CarouselContainer = styled.div`
-  max-width: 100%;
-  max-height: 30em;
-  margin: 0 auto;
-
-  & img {
-    max-height: 30em;
-    width: 100%;
-  }
 `;
