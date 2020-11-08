@@ -196,6 +196,7 @@ export default createGlobalStyle`
 		--bs-post: 0 1px 3px 0 rgba(60, 64, 67, 0.05), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
 		--bs-ud: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
 		--border: #dadce0;
+		--font-streched: "MatterSQ", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	}
 
 	ul {
